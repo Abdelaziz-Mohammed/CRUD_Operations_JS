@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="crud">
+        <div class="head">
+            <h1>crud</h1>
+            <p>product management system</p>
+        </div>
+        <div class="inputs">
+            <input type="text" name="title" id="title" placeholder="title">
+            <div class="pricing">
+                <input type="number" name="price" id="price" placeholder="price" required>
+                <input type="number" name="taxes" id="taxes" placeholder="taxes">
+                <input type="number" name="ads" id="ads" placeholder="ads">
+                <input type="number" name="discount" id="discount" placeholder="discount">
+                <div class="total-price">Total:<span class="value">0</span></div>
+            </div>
+            <input type="number" name="count" id="count" placeholder="count">
+            <input type="text" name="category" id="category" placeholder="category">
+            <button type="button" id="create">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="search-block">
+                <input type="text" name="search" id="search" placeholder="search">
+                <div class="search-buttons">
+                    <button type="button" id="search-by-title">Search By Title</button>
+                    <button type="button" id="search-by-category">Search By Category</button>
+                </div>
+            </div>
+            <button type="button" id="delete-all" onclick="deleteAll()">delete all</button>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>taxes</th>
+                            <th>ads</th>
+                            <th>discount</th>
+                            <th>total</th>
+                            <th>category</th>
+                            <th>update</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; created by <span class="auther">Abdelaziz Mohamed</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
